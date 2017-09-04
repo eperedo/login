@@ -7,10 +7,12 @@
 			</header>
 			<section class="form-content">
 				<div class="form-control">
-					<input type="email" placeholder="Enter your email" v-model="model.email" required>
+					<label for="email">Email</label>
+					<input id="email" type="email" placeholder="Enter your email" v-model="model.email" required>
 				</div>
 				<div class="form-control">
-					<input type="password" placeholder="Enter your password" v-model="model.password" required>
+					<label for="pass">Password</label>
+					<input id="pass" type="password" placeholder="Enter your password" v-model="model.password" required>
 				</div>
 				<div class="form-control">
 					<button type="submit" class="btn">Sign In</button>
@@ -19,7 +21,7 @@
 		</form>
 		<section class="login-options">
 			<p>Don't have an account yet</p>
-			<a href=";">
+			<a href="#">
 				Create an account
 			</a>
 		</section>
@@ -59,6 +61,10 @@ export default {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
+
+	label {
+		display: none;
+	}
 
 	form {
 		background-color: map-get($colors, white);
