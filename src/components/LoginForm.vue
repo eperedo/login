@@ -41,7 +41,6 @@ function data() {
 
 function signIn(e) {
 	e.preventDefault();
-	console.log(`Welcome back ${this.model.email}`);
 }
 
 export default {
