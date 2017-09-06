@@ -1,30 +1,18 @@
 <template>
 	<div id="app" role="main">
-		<login v-if="showLogin"></login>
+		<login></login>
 	</div>
 </template>
 
 <script>
 
-function data() {
-	return {
-		showLogin: false,
-	};
-}
-
-function mounted() {
-	setTimeout(() => {
-		this.showLogin = true;
-	}, 800);
-}
+import Login from './components/Login';
 
 export default {
 	name: 'app',
 	components: {
-		Login: () => import('./components/Login'),
+		Login,
 	},
-	data,
-	mounted,
 };
 </script>
 
