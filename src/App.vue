@@ -1,30 +1,18 @@
 <template>
 	<div id="app" role="main">
-		<login v-if="showLogin"></login>
+		<login></login>
 	</div>
 </template>
 
 <script>
 
-// import Login from './components/Login';
-
-function created() {
-	this.showLogin = true;
-}
-
-function data() {
-	return {
-		showLogin: false,
-	};
-}
+import Login from './components/Login';
 
 export default {
 	name: 'app',
 	components: {
-		Login: () => import('./components/Login'),
+		Login,
 	},
-	data,
-	created,
 };
 </script>
 
