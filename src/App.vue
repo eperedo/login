@@ -9,9 +9,7 @@
 // import Login from './components/Login';
 
 function created() {
-	setTimeout(() => {
-		this.showLogin = true;
-	}, 100);
+	this.showLogin = true;
 }
 
 function data() {
