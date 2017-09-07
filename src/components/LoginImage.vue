@@ -9,18 +9,27 @@
 
 <script>
 
-import door from './../assets/door.png';
-import doorWebp from './../assets/door.webp';
+// import door from './../assets/door.png';
+// import doorWebp from './../assets/door.webp';
+
+function created() {
+	const doorPath = '/static/img/door';
+	const pngExt = '.png';
+	const webpExt = '.png';
+	this.door = `${doorPath}${pngExt}`;
+	this.doorWebp = `${doorPath}${webpExt}`;
+}
 
 function data() {
 	return {
-		door,
-		doorWebp,
+		door: '',
+		doorWebp: '',
 	};
 }
 
 export default {
 	name: 'login-image',
+	created,
 	data,
 };
 </script>
