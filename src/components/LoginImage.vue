@@ -2,7 +2,6 @@
 	<div class="login-image">
 		<picture>
 			<source v-bind:srcset="doorWebp" type="image/webp">
-			<source v-bind:srcset="door" type="image/jpeg">
 			<img v-bind:src="door" alt="login image" width="330" height="337" />
 		</picture>
 	</div>
