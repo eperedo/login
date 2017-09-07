@@ -1,6 +1,6 @@
 <template>
 	<div class="login-image">
-		<img v-bind:src="door" alt="login image" />
+		<img v-bind:src="door" alt="login image" width="330" height="337" />
 	</div>
 </template>
 
