@@ -15,7 +15,7 @@
 function created() {
 	const doorPath = '/static/img/door';
 	const pngExt = '.png';
-	const webpExt = '.png';
+	const webpExt = '.webp';
 	this.door = `${doorPath}${pngExt}`;
 	this.doorWebp = `${doorPath}${webpExt}`;
 }
