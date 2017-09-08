@@ -9,9 +9,6 @@
 
 <script>
 
-// import door from './../assets/door.png';
-// import doorWebp from './../assets/door.webp';
-
 function created() {
 	const doorPath = '/static/img/door';
 	const pngExt = '.png';
