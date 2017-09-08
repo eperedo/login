@@ -1,33 +1,16 @@
 <template>
 	<div class="login-image">
 		<picture>
-			<source v-bind:srcset="doorWebp" type="image/webp">
-			<img v-bind:src="door" alt="login image" width="330" height="337" />
+			<source srcset="/static/img/door.webp" type="image/webp">
+			<img src="/static/img/door.png" alt="login image" width="330" height="337" />
 		</picture>
 	</div>
 </template>
 
 <script>
 
-function created() {
-	const doorPath = '/static/img/door';
-	const pngExt = '.png';
-	const webpExt = '.webp';
-	this.door = `${doorPath}${pngExt}`;
-	this.doorWebp = `${doorPath}${webpExt}`;
-}
-
-function data() {
-	return {
-		door: '',
-		doorWebp: '',
-	};
-}
-
 export default {
 	name: 'login-image',
-	created,
-	data,
 };
 </script>
 
