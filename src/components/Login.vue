@@ -9,14 +9,14 @@
 
 <script>
 
-import LoginForm from './LoginForm';
-import LoginImage from './LoginImage';
+// import LoginForm from './LoginForm';
+// import LoginImage from './LoginImage';
 
 export default {
 	name: 'Login',
 	components: {
-		LoginForm,
-		LoginImage,
+		LoginForm: () => import('./LoginForm'),
+		LoginImage: () => import('./LoginImage'),
 	},
 };
 </script>
