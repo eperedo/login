@@ -1,12 +1,12 @@
 <template>
 	<div id="app" role="main">
-		<!-- <login></login> -->
+		<login></login>
 	</div>
 </template>
 
 <script>
 
-// import Login from './components/Login';
+import Login from './components/Login';
 
 export default {
 	name: 'app',
