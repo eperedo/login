@@ -8,11 +8,11 @@
 			<section class="form-content">
 				<div class="form-control">
 					<label for="email">Email</label>
-					<input id="email" type="email" placeholder="Enter your email" v-model="model.email" required>
+					<input id="email" type="email" aria-label="Email" placeholder="Enter your email" v-model="model.email" required>
 				</div>
 				<div class="form-control">
 					<label for="pass">Password</label>
-					<input id="pass" type="password" placeholder="Enter your password" v-model="model.password" required>
+					<input id="pass" type="password" aria-label="Password" placeholder="Enter your password" v-model="model.password" required>
 				</div>
 				<div class="form-control">
 					<button type="submit" class="btn">Sign In</button>
@@ -62,7 +62,12 @@ export default {
 	width: 100%;
 
 	label {
-		display: none;
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
 	}
 
 	form {
