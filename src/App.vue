@@ -10,9 +10,9 @@
 
 export default {
 	name: 'app',
-	// components: {
-	// 	Login,
-	// },
+	components: {
+		Login: () => import('./components/Login'),
+	},
 };
 </script>
 
