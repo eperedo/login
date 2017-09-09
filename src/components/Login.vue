@@ -9,9 +9,6 @@
 
 <script>
 
-// import LoginForm from './LoginForm';
-// import LoginImage from './LoginImage';
-
 export default {
 	name: 'Login',
 	components: {

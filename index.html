@@ -27,13 +27,19 @@
 		<link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
 		<% }}} %>
 </head>
+<style>
+	.title-center {
+		text-align: center;
+	}
+</style>
 
 <body>
 	<noscript>
 		This is your fallback content in case JavaScript fails to load.
 	</noscript>
-	<h2>
-		A simple login view made with Vue
+	<h2 class="title-center">
+		A simple login view made with Vue.
+		<a rel="noopener" target="_blank" href="https://www.sketchappsources.com/free-source/2417-login-page-illustration-sketch-freebie-resource.html">Design from here</a>
 	</h2>
 	<div id="app"></div>
 	<!-- Todo: only include in production -->
